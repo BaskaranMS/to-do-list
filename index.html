@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--main container-->
+    <div class="container">
+
+        <!--container item-->
+        <h1>TO-DO LIST FOR STUDENTS</h1>
+        <h3 style="font-style: oblique;">Enter Your Task</h3>
+        <input type="text" placeholder="Enter your Task" id="customerinput">
+        <button id="but1" onclick="onclick()">Submit</button>
+
+        <!--future uploaded task goes here-->
+        <div class="container2"></div>
+    </div>
+    <!--container ends here-->
+
+    <!--modal when checkbox is checked-->
+    <div id="mymodal" class="modal">
+        <div class="a">
+        <span class="close" onclick="closemodal()">&times;</span>
+        </div>
+        <p>Task Completed!</p>
+    </div>
+    <!--modal ends here-->
+
+    <script src="script.js"></script>
+</body>
+</html>

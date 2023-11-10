@@ -1,0 +1,120 @@
+/*main container styles*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EB5A28;
+    height: fit-content;
+    width: 50%;
+    margin: auto;
+    margin-top: 25vh;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 8px 8px 8px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-height: 100vh;
+    overflow: auto;
+}
+body{
+    background-color: #1DB3EA;
+}
+.contitem{
+    background-color: lightsalmon;
+}
+/*input box*/
+#customerinput{
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    color: black;
+}
+/*submit button*/
+#but1{
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    background-color: #1E90FF;
+}
+#but1:hover{
+    background-color: #37E57C;
+    color: black;
+    width: 175px;
+    height: 40px;
+}
+#but1:active{
+    background-color: #004080;
+}
+/* updatable container*/
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.taskclass{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #E6DF57;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    width: 75%;
+}
+
+.checktextdiv{
+    display: flex;
+    overflow: hidden;
+}
+
+/*delete button of updated task*/
+.delete{
+    background-color: #EB5A28;
+    justify-content: flex-end;
+}
+.completed-task{
+    background-color: #add;
+    color: #777;
+    text-decoration: line-through;
+    animation: fadeout 1s ease;
+}
+@keyframes fadeout{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    background-color: wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Close button for the modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #EA0700;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
